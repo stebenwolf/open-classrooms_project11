@@ -72,9 +72,7 @@
     display:flex;
   }
 
-  .hidden {
-    visibility: hidden;
-  }
+ 
 
   .dropdown-title {
     font-size: 18px;
@@ -102,7 +100,7 @@
     border-radius: 5px;
   }
   
-  .carrousel {
+  .carousel {
     width: 1240px;
     height: 415px;
   }
@@ -167,8 +165,8 @@
     height: 223px;
     border-radius: 25px;
     background: 
-      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-      url('../assets/IMG.png');
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-image: url('../assets/IMG.png');
       display: flex;
     align-items: center;
     justify-content: center;
@@ -187,3 +185,35 @@
     font-size: 3rem;
   }
   
+
+  .visible {
+    animation: fadeIn 0.5s forwards;
+  }
+
+  .hidden {
+    animation: fadeAway 0.25s forwards;
+    display: none;
+  }
+
+  @keyframes fadeAway {
+    from {
+      opacity: 1;
+      display: flex;
+    }
+    to {
+      transform: translateY(-30px);
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+

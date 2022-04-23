@@ -1,4 +1,4 @@
-import logo from "../assets/kasa.jpg";
+import logo from "../assets/LOGO2.svg";
 import '../styles/Header.css';
 import { NavLink } from "react-router-dom";
 

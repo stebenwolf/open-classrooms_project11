@@ -1,0 +1,28 @@
+.down {
+    transform: rotate(90deg);
+    animation: rotation 0.25s forwards;
+}
+
+.right {
+    transform: rotate(90deg);
+    animation: rotation-back 0.25s forwards;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotation-back {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+    
+}

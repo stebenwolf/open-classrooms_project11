@@ -6,9 +6,8 @@
   width: 100%;
 }
 
-.Footer-logo {
-  -webkit-filter: contrast(1500%) grayscale(100%) invert(100%) brightness(1000%);
-          filter: contrast(1500%) grayscale(100%) invert(100%) brightness(1000%);
-  width: 15%;
-}
+/* .Footer-logo {
+    filter: contrast(1500%) grayscale(100%) invert(100%) brightness(1000%);
+    width: 15%;
+} */
 /*# sourceMappingURL=Footer.css.map */

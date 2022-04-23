@@ -1,0 +1,41 @@
+.carousel-arrow {
+    width: 30px;
+    background-color: black;
+
+}
+
+.Carousel {
+    display: flex;
+    max-width: 90vw;
+}
+
+.Carousel img {
+    width: 100%;
+    object-fit:cover;
+    object-position: center center;
+}
+
+.shown {
+    background-color: white;
+    color: white;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.shown {
+    display: flex;
+  }
+
+  .gone {
+    display: none;
+  }
