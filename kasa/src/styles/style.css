@@ -1,0 +1,216 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 19.96px;
+  font-weight: 500;
+}
+
+.tag {
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+  line-height: 19.96px;
+  padding: 3px 40px;
+  margin-right: 10px;
+}
+
+.locationTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.dropdown {
+  width: 582px;
+}
+
+.dropdown-open {
+  color: white;
+  font-size: 18px;
+  padding: 0px 20px;
+  width: calc(582px - 40px);
+  height: calc(52px - 0px);
+  border-radius: 10px;
+  background-color: #ff6060;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown-content {
+  border-radius: 10px;
+  background: #F7F7F7;
+  color: #ff6060;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.67px;
+  padding: 40px 20px 23px 20px;
+  width: calc(100% - 40px);
+  margin-top: -20px;
+  z-index: 2;
+  text-align: left;
+}
+
+.dropdown-content ul {
+  padding: 0;
+}
+
+.dropdown-content li {
+  font-size: 18px;
+  list-style-type: none;
+  text-align: left;
+  font-weight: 400;
+}
+
+.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.dropdown-title {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-open-description {
+  height: 249px;
+  width: 582px;
+  border-radius: 10px;
+  background: #F7F7F7;
+}
+
+.dropdownlarge-close {
+  background: #FF6060;
+  border-radius: 5px;
+  width: 1023px;
+  height: 47px;
+}
+
+.dropdownlarge {
+  background: #F7F7F7;
+  border-radius: 5px;
+}
+
+.carrousel {
+  width: 1240px;
+  height: 415px;
+}
+
+.gallery {
+  width: calc(100% - 100px - 200px);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  row-gap: 60px;
+  background-color: #f6f6f6;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 43px 100px 43px 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 56px 50px;
+  border-radius: 25px;
+}
+
+.thumbBg {
+  height: 340px;
+  width: 340px;
+  background-color: #ff6060;
+  border-radius: 10px;
+}
+
+.thumbBg a {
+  text-decoration: none;
+}
+
+.thumbBg img {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  border-radius: 10px;
+  width: 340px;
+  height: 340px;
+  top: 0;
+}
+
+.thumb {
+  width: 100%;
+  margin-top: -345px;
+  height: 340px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.HeroBg {
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../assets/IMG.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/IMG.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Hero {
+  color: white;
+  height: 223px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Hero h1 {
+  font-size: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

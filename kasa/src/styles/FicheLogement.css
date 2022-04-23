@@ -1,0 +1,115 @@
+.arrow-figure {
+  color: white;
+  width: 35px;
+  height: 25px;
+}
+
+.arrow-figure--down {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.star {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.dropdowns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.FicheLogement {
+  color: #ff6060;
+  width: calc(100% - 200px);
+  padding: 10px 100px;
+}
+
+.ficheHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ficheAuthor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.ficheProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.ficheProfile:first-child {
+  width: 100%;
+}
+
+.ficheProfile:nth-child(2) {
+  width: 100%;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.FicheLogement h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51.34px;
+  margin: 0;
+  width: 100%;
+}
+
+.FicheLogement h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ficheTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.ficheRanking {
+  margin-top: 24px;
+}
+/*# sourceMappingURL=FicheLogement.css.map */
