@@ -1,0 +1,48 @@
+
+  .HeroBg {
+    width: calc(100% - 200px);
+    height: 223px;
+    border-radius: 25px;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) repeat scroll 50% 50%, url('../assets/IMG.png') repeat scroll 50% 50%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    object-position: center;
+  }
+
+  .Hero {
+    color: white;
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .Hero h1 {
+    font-size: 48px;
+  }
+
+
+
+  @media screen and (max-width: 900px) {
+
+    .HeroBg {
+      width: calc(100% - 42px - 16px);
+      height: 111px;
+      
+      justify-content: flex-start;
+      text-align: left;
+      padding-left: 16px 
+    }
+    .Hero {
+      height: 111px;
+    }
+
+    .Hero h1 {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    
+  }

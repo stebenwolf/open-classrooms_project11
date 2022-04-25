@@ -9,8 +9,8 @@ function Header() {
                 <img src={logo} className="App-logo" alt="logo" />
             </NavLink>
             <nav>
-                <NavLink to="/">Accueil</NavLink>
-                <NavLink to="/a-propos">A Propos</NavLink>
+                <NavLink to="/" className={(navData) => navData.isActive? "active" : ""}>Accueil</NavLink>
+                <NavLink to="/a-propos" className={(navData) => navData.isActive? "active" : ""}>A Propos</NavLink>
             </nav>
         </header>
     );

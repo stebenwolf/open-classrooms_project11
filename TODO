@@ -1,10 +1,7 @@
 Reste à faire :
 
-* Version mobile du site
-* Faire disparaître la marge en bas du footer
-
-* APropos : dropdowns larges
-* Design Page 404
+* Positionner ce footer à la $*ùù en bas de page une bonne fois pour toutes !!
+* Vignette page "A propos" sur version mobile
 
 
 DONE :
@@ -13,3 +10,6 @@ DONE :
 * FicheLogement : créer un carousel
 * Générer le key unique ?
 * FicheLogement + APropos : dropdown actif
+* APropos : dropdowns larges
+* Design Page 404
+* Version mobile du site

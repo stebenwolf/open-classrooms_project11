@@ -1,0 +1,163 @@
+  
+  * {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 19.96px;
+    font-weight: 500;
+  }
+
+.App {
+    text-align: center;
+    width: 100%;
+    max-width: 1440px;
+    margin-top: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+
+  .visible {
+    display:flex;
+  }
+
+ 
+
+  
+  .gallery {
+    //width: 1240px;
+    width: calc(100% - 100px - 200px);
+    height: auto;
+    display: flex;
+    column-gap: 60px;
+    row-gap: 60px;
+    background-color: rgba(246, 246, 246, 1);
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    margin: 43px 100px 19px 100px;
+    align-items: flex-end;
+    padding: 56px 50px;
+    border-radius: 25px;
+  }
+  
+  .thumbBg {
+    //display: flex;
+    height: 340px;
+    width: 340px;
+    background-color: #ff6060;
+    border-radius: 10px;
+  }
+
+  .thumbBg a {
+    text-decoration: none;
+  }
+
+  .thumbBg img {
+    position:sticky;
+    z-index: 1;
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    top: 0;
+  }
+
+  .thumb {
+    //width: 340px;
+    width: 100%;
+    margin-top: -345px;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    color: white;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+
+    position: relative;
+    z-index: 2;
+  }
+
+
+  .visible {
+    animation: fadeIn 0.5s forwards;
+  }
+
+  .hidden {
+    animation: fadeAway 0.25s forwards;
+    display: none;
+  }
+
+  @keyframes fadeAway {
+    from {
+      opacity: 1;
+      display: flex;
+    }
+    to {
+      transform: translateY(-30px);
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+
+    .App {
+        min-width: 375px;
+      margin-top: 20px;
+    }
+
+    .gallery {
+        background-color: white;
+        width: calc(100% - 38px);
+        margin: 0;
+        padding: 19px;
+        justify-content: center;
+        row-gap: 19px;
+        column-gap: 19px;
+    }
+
+    .thumbBg {
+        width: 335px;
+        height: 255px;
+        margin-bottom: 0;
+      }
+        
+      .thumbBg img {
+        position:sticky;
+        width: 335px;
+        height: 255px;
+      }
+    
+      .thumb {
+        width: 100%;
+        margin-top: -260px;
+        height: 255px;
+        
+      }
+    
+      .locationTitle {
+          padding-bottom: 15px;
+      }
+  }
+
+
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}

@@ -10,7 +10,7 @@ class Picture extends React.Component {
     render() {
         if (this.props.item === this.props.activeSource) {
             return (
-                <img src={this.props.item} alt={("Carousel Pic ")+this.props.item} key={("pic")+this.props.pic} className={this.state.isShown ? "shown" : "gone"} />
+                <img src={this.props.item} alt={("Carousel Pic ")+this.props.item} key={("pic")+this.props.pic} className={this.state.isShown ? "carousel-pic shown" : "hidden"} />
                 )
         }
     }

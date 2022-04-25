@@ -1,14 +1,4 @@
-.arrow-figure {
-    color: white;  
-    width: 35px;
-    height: 25px;
-    
-    //filter: invert(99%) sepia(0%) saturate(7497%) hue-rotate(229deg) brightness(100%) contrast(102%);
-}
 
-.arrow-figure--down {
-    transform: rotate(90deg);
-}
 
 .star {
     width: 30px;
@@ -21,46 +11,29 @@
     justify-content: space-between;
 }
 
+.Fiche {
+    height: 100%;
+}
+
 .FicheLogement {
     color: #ff6060;
     width: calc(100% - 200px);
     padding: 10px 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .ficheHeader {
     display: flex;
     
     justify-content: space-between;
-    
+    margin-top: 30px;
+    margin-bottom: -30px;
 }
 
-.ficheAuthor {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
 
-.ficheProfile {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    column-gap: 10px;
-}
-
-.ficheProfile:first-child {
-    width: 100%;
-}
-
-.ficheProfile:nth-child(2) {
-    width: 100%;
-}
-
-.profilePic {
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
-}
 
 .FicheLogement h1 {
     font-size: 36px;
@@ -86,6 +59,152 @@
     margin-bottom: 24px;
 }
 
+
+
+.ficheAuthor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: auto;
+}
+
+.ficheProfile {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+
+.ficheProfile:first-child {
+    width: 100%;
+}
+
+.ficheProfile:nth-child(2) {
+    width: 100%;
+}
+
+.profilePic {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.profileName {
+    display: flex;
+    text-align: right;
+}
+
 .ficheRanking {
     margin-top: 24px;
+    display: flex;
+}
+
+
+.tag {
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #ff6060;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+    line-height: 19.96px;
+    padding: 3px 40px;
+    margin-right: 10px;
+  }
+
+  .locationTitle {
+    display: flex;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+
+@media screen and (max-width: 900px) {
+    .FicheLogement {
+        width: calc(100% - 42px);
+        padding: 0px 21px 0 21px;
+    }
+
+    .ficheHeader {
+        margin: 0;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    .FicheLogement h1 {
+        
+        font-size: 18px;
+        line-height: 25px;
+        padding: 0;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .FicheLogement h3 {
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .ficheTags {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .tag {
+        display: inline-flex;
+        font-size: 10px;
+        border-radius: 5px;
+        padding-right: 25px;
+        padding-left: 25px;
+        width: fit-content;
+        height: auto;
+        margin: 0;
+    }
+
+    .ficheTitle {
+        margin-bottom: 16px;
+    }
+
+    .ficheAuthor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .ficheProfile {
+        order: 2;
+    }
+
+    .ficheRanking {
+        order: 1;
+        margin: 0;
+    }
+
+    .star {
+        width: 15px;
+        margin-right: 5px;
+    }
+
+    .ficheProfile:first-child {
+        width: auto;
+    }
+
+    .profilePic {
+        width: 32px;
+        height: 32px;
+    }
+
+    .profileName {
+        font-size: 12px
+    }
 }

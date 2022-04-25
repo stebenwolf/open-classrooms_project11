@@ -1,14 +1,3 @@
-.arrow-figure {
-  color: white;
-  width: 35px;
-  height: 25px;
-}
-
-.arrow-figure--down {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
 .star {
   width: 30px;
   margin-right: 10px;
@@ -24,10 +13,25 @@
           justify-content: space-between;
 }
 
+.Fiche {
+  height: 100%;
+}
+
 .FicheLogement {
   color: #ff6060;
   width: calc(100% - 200px);
   padding: 10px 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .ficheHeader {
@@ -37,49 +41,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.ficheAuthor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.ficheProfile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-}
-
-.ficheProfile:first-child {
-  width: 100%;
-}
-
-.ficheProfile:nth-child(2) {
-  width: 100%;
-}
-
-.profilePic {
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
+  margin-top: 30px;
+  margin-bottom: -30px;
 }
 
 .FicheLogement h1 {
@@ -109,7 +72,183 @@
   margin-bottom: 24px;
 }
 
+.ficheAuthor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: auto;
+}
+
+.ficheProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ficheProfile:first-child {
+  width: 100%;
+}
+
+.ficheProfile:nth-child(2) {
+  width: 100%;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.profileName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+}
+
 .ficheRanking {
   margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tag {
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+  line-height: 19.96px;
+  padding: 3px 40px;
+  margin-right: 10px;
+}
+
+.locationTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 900px) {
+  .FicheLogement {
+    width: calc(100% - 42px);
+    padding: 0px 21px 0 21px;
+  }
+  .ficheHeader {
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .FicheLogement h1 {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .FicheLogement h3 {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .ficheTags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 10px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .tag {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 10px;
+    border-radius: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    margin: 0;
+  }
+  .ficheTitle {
+    margin-bottom: 16px;
+  }
+  .ficheAuthor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .ficheProfile {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .ficheRanking {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
+  }
+  .star {
+    width: 15px;
+    margin-right: 5px;
+  }
+  .ficheProfile:first-child {
+    width: auto;
+  }
+  .profilePic {
+    width: 32px;
+    height: 32px;
+  }
+  .profileName {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=FicheLogement.css.map */

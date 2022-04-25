@@ -21,6 +21,9 @@ function FicheLogement() {
     }
 
     return (
+        <div className='Fiche'>
+
+        
         <div className="FicheLogement">
             <Carousel id={id} />
             <div className="ficheHeader">
@@ -44,13 +47,15 @@ function FicheLogement() {
             </div>
 
             <div className='dropdowns'>
-                <Toggle id={id} title="Description" content={logement[id].description} />
-                <Toggle id={id} title="Equipements" content={(<ul>
+                <Toggle droptype="dropdown" id={id} title="Description" content={logement[id].description} />
+                <Toggle droptype="dropdown" id={id} title="Equipements" content={(<ul>
                     {logement[id].equipments.map((equipement) => (
                         <li key={('li')+equipement+logement[id].id}>{equipement}</li>
                     ))}
                 </ul>)} />
             </div>
+            </div>
+            
         </div>
     )
 }

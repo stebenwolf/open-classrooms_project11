@@ -20,7 +20,7 @@ class Toggle extends React.Component {
     render() {
 
         return (
-            <div className="dropdown">
+            <div className={this.props.droptype}>
                 <div className={this.state.isToggleOn ? "dropdown-open" : "dropdown-open dropdown-closed"}>
                     <h2 className="dropdown-title">{this.props.title}</h2>
                     <img src={arrow} className={this.state.isToggleOn ? "arrow-figure right" : "arrow-figure down"} alt="arrow" onClick={this.handleClick} />

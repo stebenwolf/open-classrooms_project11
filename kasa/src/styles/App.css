@@ -1,41 +1,209 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 19.96px;
+  font-weight: 500;
+}
+
 .App {
   text-align: center;
-}
-
-
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-.App-header {
-  background-color: white;/* 
-  min-height: 50vh; */
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 40px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:space-between;
-  font-size: calc(10px + 2vmin);
-  color: rgba(255, 96, 96, 1);
-  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.App-logo {
-  height: 8vmin;
-  pointer-events: none;
+.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.gallery {
+  width: calc(100% - 100px - 200px);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  row-gap: 60px;
+  background-color: #f6f6f6;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 43px 100px 19px 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 56px 50px;
+  border-radius: 25px;
 }
 
-@keyframes App-logo-spin {
+.thumbBg {
+  height: 340px;
+  width: 340px;
+  background-color: #ff6060;
+  border-radius: 10px;
+}
+
+.thumbBg a {
+  text-decoration: none;
+}
+
+.thumbBg img {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  border-radius: 10px;
+  width: 340px;
+  height: 340px;
+  top: 0;
+}
+
+.thumb {
+  width: 100%;
+  margin-top: -345px;
+  height: 340px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.visible {
+  -webkit-animation: fadeIn 0.5s forwards;
+          animation: fadeIn 0.5s forwards;
+}
+
+.hidden {
+  -webkit-animation: fadeAway 0.25s forwards;
+          animation: fadeAway 0.25s forwards;
+  display: none;
+}
+
+@-webkit-keyframes fadeAway {
   from {
-    transform: rotate(0deg);
+    opacity: 1;
+    display: -webkit-box;
+    display: flex;
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    opacity: 0;
+    display: none;
   }
 }
+
+@keyframes fadeAway {
+  from {
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  to {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    min-width: 375px;
+    margin-top: 20px;
+  }
+  .gallery {
+    background-color: white;
+    width: calc(100% - 38px);
+    margin: 0;
+    padding: 19px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 19px;
+    -webkit-column-gap: 19px;
+            column-gap: 19px;
+  }
+  .thumbBg {
+    width: 335px;
+    height: 255px;
+    margin-bottom: 0;
+  }
+  .thumbBg img {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 335px;
+    height: 255px;
+  }
+  .thumb {
+    width: 100%;
+    margin-top: -260px;
+    height: 255px;
+  }
+  .locationTitle {
+    padding-bottom: 15px;
+  }
+}
+
+.About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+}
+/*# sourceMappingURL=App.css.map */
