@@ -38,7 +38,7 @@ function App() {
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path=" /" element={<Home />}  />
+          <Route path="/" element={<Home />}  />
           <Route path="/logement/:id" element={<FicheLogement />} />
           <Route path="/a-propos" element = {<About />} />
           <Route path="*" element={<Error404 />} />
