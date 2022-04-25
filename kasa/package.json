@@ -38,5 +38,6 @@
   },
   "devDependencies": {
     "svg-react-loader": "^0.4.6"
-  }
+  },
+  "homepage": "https://stebenwolf.github.io/openclassrooms_project11/kasa/build/"
 }
