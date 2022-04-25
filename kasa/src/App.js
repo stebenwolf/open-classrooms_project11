@@ -13,11 +13,15 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 //const Home = lazy(() => import('./components/Home'));
 
+// build version : <BrowserRouter basename="https://stebenwolf.github.io/open-classrooms_project11/kasa/build/"> 
+
+
 function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="https://stebenwolf.github.io/open-classrooms_project11/kasa/build/"> 
+      
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
