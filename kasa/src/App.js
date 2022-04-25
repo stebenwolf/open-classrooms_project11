@@ -20,12 +20,25 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter> 
+      {/* <BrowserRouter> 
       
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />}  />
+          <Route path="/logement/:id" element={<FicheLogement />} />
+          <Route path="/a-propos" element = {<About />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+        </Suspense>
+      <Footer />
+      </BrowserRouter> */}
+
+      <BrowserRouter basename="/open-classrooms_project11/kasa/build">
+      <Header />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path=" /" element={<Home />}  />
           <Route path="/logement/:id" element={<FicheLogement />} />
           <Route path="/a-propos" element = {<About />} />
           <Route path="*" element={<Error404 />} />
