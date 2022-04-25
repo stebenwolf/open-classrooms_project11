@@ -7,7 +7,7 @@ import React from 'react';
 function Home() {
     return (
             <div className ="Home">
-        <Hero pic={(".")+img} text="Chez vous, partout et ailleurs" />
+        <Hero pic={img} text="Chez vous, partout et ailleurs" />
         <div className="gallery">
             {logement.map((item) => (
                 <div className="thumbBg" key={item.id}>

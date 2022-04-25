@@ -5,7 +5,7 @@ import img from '../assets/about.png';
 function About() {
     return (
         <div className="About">
-            <Hero pic={"."+img} text="" type="About" />
+            <Hero pic={img} text="" type="About" />
             <div className="dropdowns dropdowns-large">
                 <Toggle droptype="dropdown dropdown-large" title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
                 <Toggle droptype="dropdown dropdown-large" title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
