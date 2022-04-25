@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename="https://stebenwolf.github.io/open-classrooms_project11/kasa/build/"> 
+      <BrowserRouter basename="/kasa/build"> 
       
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
