@@ -1,12 +1,14 @@
+// @ts-nocheck
 import Carousel from './Carousel.js';
 import Rating from './Rating';
 import '../styles/FicheLogement.css';
 import logement from '../assets/logements.js';
 import Toggle from './Dropdown.js';
+import Error404 from './Error404.js';
 
 function FicheLogement() {
 
-    let id=0;
+    let id = null;
     let rank = 0;
     const url = window.location.pathname
     const urlParts = url.substring(1).split("/");
@@ -18,6 +20,10 @@ function FicheLogement() {
             }
             
         })
+    }
+
+    if (id===null) {
+        return <Error404 />
     }
 
     return (
